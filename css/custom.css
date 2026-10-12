@@ -1,0 +1,128 @@
+/* DishSushi Luxury Japanese Cuisine Styles */
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Gold Gradient Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #b48c28 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-subtle-gradient {
+  background: linear-gradient(135deg, #ffffff 20%, #fef08a 60%, #d4af37 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold Button Hover Transitions */
+.btn-gold-outline {
+  position: relative;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  transition: all 0.3s ease;
+}
+.btn-gold-outline:hover {
+  background-color: #d4af37;
+  color: #0a0a0a;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-gold-solid {
+  background: linear-gradient(135deg, #d4af37 0%, #c59b27 100%);
+  color: #0a0a0a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+.btn-gold-solid:hover {
+  background: linear-gradient(135deg, #fef08a 0%, #d4af37 100%);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Luxury Menu Filter Tabs */
+.menu-tab-btn {
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a8a29e;
+}
+.menu-tab-btn:hover {
+  border-color: #d4af37;
+  color: #fef08a;
+}
+.menu-tab-btn.active-tab {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: #0a0a0a;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35);
+}
+
+/* Event Tier Active Tab */
+.event-tab-btn.active-tab {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: #0a0a0a;
+  font-weight: 600;
+}
+
+/* Nav Link Hover Indicator */
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 1px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active-nav::after {
+  width: 100%;
+}
+.nav-link:hover,
+.nav-link.active-nav {
+  color: #d4af37;
+}
+
+/* Star Rating Colors */
+.star-gold {
+  color: #d4af37;
+}
+
+/* Luxury Frame Borders */
+.gold-frame {
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  transition: all 0.3s ease;
+}
+.gold-frame:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
